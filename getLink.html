@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Anonymous Project!!!!!??</title>
+        
+        <!-- CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        
+        <!--<script async data-main="main" src="js/fallback.min.js" type="text/javascript"></script>-->
+        
+    </head>
+    
+    <body ng-app="MainApp">
+        <div class="header">
+            <div id="ourLogo">Logo</div>
+            <div id="ourLogin">
+                <a href="#">Logout</a> | <a href="#">Register</a>
+            </div>
+        </div>
+        
+        <div class="mainContent">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" ng-controller="ContentController">
+                <event-card event="eventDetails"></event-card>
+                
+                <div class="commentsContainer">
+                    <div class="newComment clearfix">
+                        <div class="userLeft clearfix">
+                            <img class="userAvatar" src="img/user2.svg" alt="user2">
+                            <p class="userName">Returning User 2</p>
+                        </div>
+                        <textarea style="padding: 10px;" placeholder="Comment..."></textarea>
+                        <button class="btn btn-comment">Submit</button>
+                    </div>
+                    
+                    <div class="commentsSection">
+                        <div ng-repeat="comment in comments">
+                            <single-comment comm="comment"></single-comment>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>        
+
+        <div class="footer">
+        </div>
+        
+        <!-- Scripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/color-thief.js"></script>
+        
+        <!-- Modules -->
+        <script src="js/app.js"></script>
+        
+        <!-- Controllers -->
+        <script src="js/controllers/ContentController.js"></script>
+        
+        <!-- Directives -->
+        <script src="js/directives/singleComment.js"></script>
+        <script src="js/directives/eventCard.js"></script>
+        
+        <!-- Services -->
+        <script src="js/services/services.js"></script>
+        
+        <!-- Functions -->        
+        <script type="text/javascript">
+            /*function openLinkDlg(obj){
+                alert("HYG: http://www.lnk.cm/0s1sda231230jjasldk0123nkl");
+            }*/            
+            
+            /*function getCol(){
+                var colorThief = new ColorThief();
+                //var colors = [];
+                
+                for(var i=0 ; i< $('.userAvatar').length ; i++)
+                {
+                    var color = colorThief.getColor($('.userAvatar')[i]);
+                    $($('.userAvatar')[i]).css('border-color', color);  
+                }
+            };*/
+            
+            //$(document).ready(getCol());
+        </script>
+    
+    </body>
+</html>

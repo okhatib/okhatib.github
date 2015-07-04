@@ -1,0 +1,144 @@
+#ourLogo {
+    width: 200px; 
+    height: 100px; 
+    background-color: #ededed; 
+    margin: auto;
+    text-align: center;
+}
+
+#ourLogin {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translate(0, -50%);
+}
+
+.header {
+    position: relative;
+    top: 16px;
+}
+
+.contentContainer {
+    position: relative;
+    height: 500px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+    box-sizing: border-box;
+}
+
+input, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16sp;
+    height: 48dp;
+    padding: 16dp 0;
+    margin: 5px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+textarea{
+    min-height: 75px;
+    width: 100%;
+}
+
+.btn-getLink {
+    float: right;
+    margin-top: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+.userAvatar {
+    border-radius: 100%;
+    border: 2px solid #ededed;
+    padding: 5px;
+}
+
+.userName {
+    display: inline;
+    margin: 10px;
+    color: blue;
+}
+
+.note {
+    max-width: 280px;
+    color: orangered;
+}
+
+.retUser {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+    margin: 0px;
+    height: 25px;
+}
+
+body {
+      background-color: #f5f5f5;
+}
+
+.content > h5 {
+    color: blue;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.commentsContainer {
+    /*position: absolute;
+    height: auto;*/
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+    border-top: 1px solid rgba(0,0,0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+.userComment {
+    float: left;
+    width: 100%;
+}
+
+
+
+.userRight {
+    float: right;
+}
+
+.userLeft {
+    float: left;
+    width: 100%;
+}
+
+.userCommentRight {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.btn-comment {
+    float: right;
+}
+
+.newComment {
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}

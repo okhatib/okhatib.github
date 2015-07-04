@@ -1,0 +1,7 @@
+<div class="comment clearfix">
+    <div ng-class="comm.originalPoster ? 'userRight' : 'userLeft'">
+        <img class="userAvatar" ng-src="{{ comm.userImg }}" alt="user2">
+        <p class="userName">{{ comm.userName }}</p>
+    </div>
+    <h5 ng-class="comm.originalPoster ? 'userCommentRight' : 'userComment'">{{ comm.text }}</h5>
+</div>

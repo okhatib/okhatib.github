@@ -1,0 +1,15 @@
+<div class="eventData content">
+    <img class="userAvatar" ng-src="{{ event.owner.photo }}" alt="user1">
+    <p class="userName">{{ event.owner.name }}</p>
+    <br />
+    <h5>Event Title</h5>
+    <p class="retUser eventTitle">{{ event.name }}</p>
+    <h5>Date/Time</h5>
+    <p class="retUser" style="display:inline;">{{ event.date | date:'longDate' }}</p>
+    <p class="retUser" style="display:inline;">{{ event.time | date:'shortTime' }}</p>
+    <h5>Event Location</h5>
+    <p class="retUser">{{ event.location.name }}</p>
+    <p class="retUser">{{ event.location.address }}</p>
+    <h5>Description</h5>
+    <p class="retUser" style="height: auto;">{{ event.details }}</p>
+</div>
